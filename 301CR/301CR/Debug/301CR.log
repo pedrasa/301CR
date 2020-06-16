@@ -1,0 +1,47 @@
+﻿  301CR.cpp
+  Audio.cpp
+  Engine.cpp
+  Flapper.cpp
+C:\Users\Desktop\Desktop\301CR\301CR\301CR\301CR.cpp(12,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Desktop\Desktop\301CR\301CR\301CR\Flapper.cpp(17,33): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Desktop\Desktop\301CR\301CR\301CR\Flapper.cpp(64,72): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  GameManager.cpp
+C:\Users\Desktop\Desktop\301CR\301CR\301CR\Flapper.cpp(64,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Desktop\Desktop\301CR\301CR\301CR\GameManager.cpp(11,109): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Desktop\Desktop\301CR\301CR\301CR\GameManager.cpp(11,82): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Desktop\Desktop\301CR\301CR\301CR\GameManager.cpp(19,109): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Desktop\Desktop\301CR\301CR\301CR\GameManager.cpp(19,82): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Desktop\Desktop\301CR\301CR\301CR\GameManager.cpp(20,108): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  InputManager.cpp
+  Keyboard.cpp
+  Math.cpp
+  Mouse.cpp
+  Pipe.cpp
+  PipeManager.cpp
+C:\Users\Desktop\Desktop\301CR\301CR\301CR\GameManager.cpp(20,81): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Desktop\Desktop\301CR\301CR\301CR\PipeManager.cpp(112,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  Rect.cpp
+  RigidBody.cpp
+  Sprite.cpp
+  Texture.cpp
+  Vector3.cpp
+  Generating Code...
+C:\Users\Desktop\Desktop\301CR\301CR\301CR\PipeManager.cpp(113,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Audio.obj : error LNK2019: unresolved external symbol "public: enum FMOD_RESULT __stdcall FMOD::System::setSoftwareFormat(int,enum FMOD_SPEAKERMODE,int)" (?setSoftwareFormat@System@FMOD@@QAG?AW4FMOD_RESULT@@HW4FMOD_SPEAKERMODE@@H@Z) referenced in function "public: __thiscall Audio::Audio(char const *)" (??0Audio@@QAE@PBD@Z)
+Audio.obj : error LNK2019: unresolved external symbol "public: enum FMOD_RESULT __stdcall FMOD::System::createSound(char const *,unsigned int,struct FMOD_CREATESOUNDEXINFO *,class FMOD::Sound * *)" (?createSound@System@FMOD@@QAG?AW4FMOD_RESULT@@PBDIPAUFMOD_CREATESOUNDEXINFO@@PAPAVSound@2@@Z) referenced in function "public: __thiscall Audio::Audio(char const *)" (??0Audio@@QAE@PBD@Z)
+Audio.obj : error LNK2019: unresolved external symbol "public: enum FMOD_RESULT __stdcall FMOD::System::playSound(class FMOD::Sound *,class FMOD::ChannelGroup *,bool,class FMOD::Channel * *)" (?playSound@System@FMOD@@QAG?AW4FMOD_RESULT@@PAVSound@2@PAVChannelGroup@2@_NPAPAVChannel@2@@Z) referenced in function "public: void __thiscall Audio::Play(void)" (?Play@Audio@@QAEXXZ)
+Audio.obj : error LNK2019: unresolved external symbol "public: enum FMOD_RESULT __stdcall FMOD::Sound::setDefaults(float,int)" (?setDefaults@Sound@FMOD@@QAG?AW4FMOD_RESULT@@MH@Z) referenced in function "public: __thiscall Audio::Audio(char const *)" (??0Audio@@QAE@PBD@Z)
+Audio.obj : error LNK2019: unresolved external symbol "public: static enum FMOD_RESULT __stdcall FMOD::Studio::System::create(class FMOD::Studio::System * *,unsigned int)" (?create@System@Studio@FMOD@@SG?AW4FMOD_RESULT@@PAPAV123@I@Z) referenced in function "public: __thiscall Audio::Audio(char const *)" (??0Audio@@QAE@PBD@Z)
+Audio.obj : error LNK2019: unresolved external symbol "public: enum FMOD_RESULT __stdcall FMOD::Studio::System::initialize(int,unsigned int,unsigned int,void *)" (?initialize@System@Studio@FMOD@@QAG?AW4FMOD_RESULT@@HIIPAX@Z) referenced in function "public: __thiscall Audio::Audio(char const *)" (??0Audio@@QAE@PBD@Z)
+Audio.obj : error LNK2019: unresolved external symbol "public: enum FMOD_RESULT __stdcall FMOD::Studio::System::getLowLevelSystem(class FMOD::System * *)const " (?getLowLevelSystem@System@Studio@FMOD@@QBG?AW4FMOD_RESULT@@PAPAV13@@Z) referenced in function "public: __thiscall Audio::Audio(char const *)" (??0Audio@@QAE@PBD@Z)
+GameManager.obj : error LNK2019: unresolved external symbol "public: enum FMOD_RESULT __stdcall FMOD::Studio::System::update(void)" (?update@System@Studio@FMOD@@QAG?AW4FMOD_RESULT@@XZ) referenced in function "public: void __thiscall GameManager::Start(void)" (?Start@GameManager@@QAEXXZ)
+C:\Users\Desktop\Desktop\301CR\301CR\..\SFML-2.5.0\lib\sfml-graphics-d.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\Desktop\Desktop\301CR\301CR\..\SFML-2.5.0\lib\sfml-window-d.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\Desktop\Desktop\301CR\301CR\..\SFML-2.5.0\lib\freetype.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\Desktop\Desktop\301CR\301CR\..\SFML-2.5.0\lib\sfml-system-d.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\Desktop\Desktop\301CR\301CR\..\FMOD\api\lowlevel\lib\fmod64_vc.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\Desktop\Desktop\301CR\301CR\..\FMOD\api\lowlevel\lib\fmodL64_vc.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\Desktop\Desktop\301CR\301CR\..\FMOD\api\studio\lib\fmodstudio64_vc.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\Desktop\Desktop\301CR\301CR\..\FMOD\api\studio\lib\fmodstudioL64_vc.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\Desktop\Desktop\301CR\301CR\..\FMOD\api\fsbank\lib\fsbank64_vc.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\Desktop\Desktop\301CR\301CR\Debug\301CR.exe : fatal error LNK1120: 8 unresolved externals
