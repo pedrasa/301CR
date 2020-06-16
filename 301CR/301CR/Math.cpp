@@ -1,0 +1,72 @@
+#include "Math.h"
+
+
+#include <math.h>
+//general math equations useful in the creation of the bounding boxes for the rigidbody and collision, creation of "namespace", unclear on usefullness of the actual namepsace
+
+namespace Math
+{
+	double ConvertToRadians(double degrees)
+	{
+		return (degrees * PI) / 180;
+	}
+
+	double ConvertToDegrees(double radians)
+	{
+		return (radians * 180) / PI;
+	}
+	//the two above convert to radians and degrees using PI which we define in the header
+	Vector3 RotatePoint(Vector3 point, Vector3 pivot, float rot)
+	{
+		double radRot = ConvertToRadians(rot);
+		double s = sin(radRot);
+		double c = cos(radRot);
+
+		point = point - pivot;
+
+		float newX = (float)(point.x * c - point.y * s);
+		float newY = (float)(point.x * s + point.y * c);
+
+		point.x = newX + pivot.x;
+		point.y = newY + pivot.y;
+
+		return point;
+	}
+	//rotation of a point by a pivot
+
+	float Min(vector<float> x)
+	{
+		float retVal = x[0];
+
+		for (unsigned int i = 1; i < x.size(); i++)
+		{
+			if (x[i] < retVal)
+				retVal = x[i];
+		}
+
+		return retVal;
+	}
+
+	float Max(vector<float> x)
+	{
+		float retVal = x[0];
+
+		for (unsigned int i = 1; i < x.size(); i++)
+		{
+			if (x[i] > retVal)
+				retVal = x[i];
+		}
+
+		return retVal;
+	}
+	//minimum and maximum value
+	float Abs(float x)
+	{
+		if (x > 0)
+		{
+			return x;
+		}
+		return -x;
+	}
+	//absolute value
+}
