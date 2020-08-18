@@ -23,9 +23,9 @@ GameManager::GameManager()//handles our game loop, usable to create level 2
 	mtextureChanger = new textureChanger();
 
 	mAudio = new Audio("Die.wav");
-	mAudio1 = new Audio("Background.wav");
+	//mAudio1 = new Audio("Background.wav");
 
-	mAudio1->ChangeSoundLevel(40.0f); //use this to change background music sound level
+	//mAudio1->ChangeSoundLevel(40.0f); //use this to change background music sound level
 
 	mStartSprite = Sprite("Textures/spacetostart.png", Vector3(Engine::SCREEN_WIDTH / 2, Engine::SCREEN_HEIGHT / 2, 0));
 	mGameoverSprite = Sprite("Textures/gameover.png", Vector3(Engine::SCREEN_WIDTH / 2, Engine::SCREEN_HEIGHT / 2, 0));
@@ -82,8 +82,8 @@ void GameManager::Start()
 			mFlapper->Update();
 			mPipeManager->Update();
 			mAudio->system->update();
-			mAudio1->system->update();
-			mAudio1->Play();
+			//mAudio1->system->update();
+			//mAudio1->Play();
 			mEngine->BeginRender();
 			mPipeManager->Render();
 			mFlapper->Render();
